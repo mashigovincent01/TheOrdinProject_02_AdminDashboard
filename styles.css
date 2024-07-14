@@ -92,11 +92,18 @@ main{
     display: flex;
     gap: 10px;
 }
+.sidebar-middle{
+    
+}
+object{
+    fill: white;
+}
 .sidebar{
     grid-area: 1/1/3/2;
     /* grid-area: sidebar; */
     display: grid;
     grid-template-rows: 100px 1fr 1fr;
-    background-color: lightblue;
+    background-color: #006989;
+    color: white;
 }
 

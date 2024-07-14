@@ -9,19 +9,48 @@ body{
     padding: 0;
     min-width: 1200px;
 }
-
+.bottom-left object{
+    float: left;
+    margin-right: 20px;
+}
+.bottom-left{
+    font-weight: bold;
+    padding-left: 20px;
+}
 .header{
     /* grid-area: header; */
     grid-area: 1/2/2/3;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-rows: 100px 100px;
+    
     background-color: white;
+    
+}
+.buttons button{
+    border-radius: 19px;
+    padding: 10px 10px;
+    width: 100px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;;
+}
+.header-top{
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
 }
 
 .main{
     grid-area: 2/2/3/3;
     /* grid-area: main; */
-    background-color: black;
+    background-color: lightslategray;
 }
 /* website to get icons */
 /* https://pictogrammers.com/library/mdi/ */
@@ -49,19 +78,25 @@ main{
 .left{
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 20px;
 }
 .right{
     justify-content: flex-end;
-    padding-right: 30px;
+    padding-right: 50px;
     display: flex;
     /* justify-content: center; */
     gap: 20px;
 }
+.icon-label{
+    display: flex;
+    gap: 10px;
+}
 .sidebar{
     grid-area: 1/1/3/2;
     /* grid-area: sidebar; */
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
     background-color: lightblue;
 }
 

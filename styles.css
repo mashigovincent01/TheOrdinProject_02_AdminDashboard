@@ -126,6 +126,7 @@ h3{
 .card-icons{
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
 }
 a{
     text-decoration: none;
